@@ -17,3 +17,9 @@ Because JS is dynamically typed, so it does not expects any particular type in d
 
 -   install Typescript in **standart web (HTML)** application:
     ⓵ `npm install typescript` ===> ⓶`npx tsc filename`
+
+---
+
+## Working with Primitives, Array & Object Types
+
+![Working with Primitives, Array & Object Types](slides/basic_data_typing.jpg)
