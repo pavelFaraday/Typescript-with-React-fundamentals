@@ -2,6 +2,7 @@
 // Complex Types: arrays, objects
 // Type Inference
 // Union Types
+// Type Aliases
 // Function Types, parameters
 
 /* -------------------------------------------------------------------------- */
@@ -78,3 +79,36 @@ let movie: number | string | boolean = false;
 
 measure = ["100km", "20 meter"];
 movie = "Lord of Rings";
+
+/* -------------------------------------------------------------------------- */
+
+// Type Aliases
+// Aliases and Interfaces allows types to be easily shared between different variables/objects.
+// Interfaces are similar to type aliases, except they only apply to object types.
+// Type aliases are difing with keyword `type`.
+
+/* 
+type Neighbor = {
+	name: string;
+	age: number;
+}
+
+let member: {
+	name: string;
+	age: number;
+};
+let neighborhood: {
+	name: string;
+	age: number;
+}[];
+
+👆👆👆＝＝＝👇👇👇
+*/
+
+type Neighbor = {
+	name: string;
+	age: number;
+};
+
+let member: Neighbor;
+let neighborhood: Neighbor[];

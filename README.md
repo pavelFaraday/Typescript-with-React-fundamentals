@@ -42,3 +42,11 @@ A union type allows you to provide more then one type for single variable.
 ![Union Types](slides/union_types.jpg)
 
 ---
+
+## Type Aliases
+
+Aliases and Interfaces allows types to be easily shared between different variables/objects.
+Interfaces are similar to type aliases, except they **only apply to object types**.
+Type aliases are difing with keyword `type`.
+
+![Type aliases](slides/type_aliases.jpg)
