@@ -1,5 +1,6 @@
 // Primitives: number,  string, boolean
 // Complex Types: arrays, objects
+// Type Inference
 // Function Types, parameters
 
 /* -------------------------------------------------------------------------- */
@@ -58,3 +59,14 @@ people = [
 		age: 20,
 	},
 ];
+
+/* -------------------------------------------------------------------------- */
+
+// Type Inference
+// type inference is used to provide type information when there is no explicit type annotation.
+// If you immediately initialize variable without type, typescript will look at the value type here - so, it will see that we stored a string in that variable. And it will then use that value type as an inferred type for this variable. And if you then try to assign a different type thereafter, you will get an error because of type inference;
+
+let course = "Hello World";
+course = 788;
+
+/* -------------------------------------------------------------------------- */
