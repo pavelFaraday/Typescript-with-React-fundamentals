@@ -1,6 +1,7 @@
 // Primitives: number,  string, boolean
 // Complex Types: arrays, objects
 // Type Inference
+// Union Types
 // Function Types, parameters
 
 /* -------------------------------------------------------------------------- */
@@ -70,3 +71,10 @@ let course = "Hello World";
 course = 788;
 
 /* -------------------------------------------------------------------------- */
+
+// Union Types
+let measure: string[] | number = 6788;
+let movie: number | string | boolean = false;
+
+measure = ["100km", "20 meter"];
+movie = "Lord of Rings";
