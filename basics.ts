@@ -112,3 +112,15 @@ type Neighbor = {
 
 let member: Neighbor;
 let neighborhood: Neighbor[];
+
+member = {
+	name: "Hello",
+	age: 16,
+};
+
+neighborhood = [
+	{
+		name: "Milana",
+		age: 29,
+	},
+];
