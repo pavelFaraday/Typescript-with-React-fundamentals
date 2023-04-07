@@ -29,7 +29,7 @@ Because JS is dynamically typed, so it does not expects any particular type in d
 ## Type Inference
 
 `Type inference is used to provide type information when there is no explicit type annotation.`
-If you immediately initialize variable without type, typescript will look at the value type here - so, it will see that we stored a string in that variable. And it will then use that value type as an inferred type for this variable. And if you then try to assign a different type thereafter, you will get an error because of type inference;
+If you immediately initialize variable without type, typescript will look at the value type here - so, it will see that we stored a string in that variable. And it will then use that value type as an inferred type for this variable. And if you then try to assign a different type thereafter, you will get an error because of type inference.
 
 ![Type Inference](slides/type_inferrence.jpg)
 
