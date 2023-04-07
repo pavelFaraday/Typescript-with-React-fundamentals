@@ -50,3 +50,11 @@ Interfaces are similar to type aliases, except they **only apply to object types
 Type aliases are difing with keyword `type`.
 
 ![Type aliases](slides/type_aliases.jpg)
+
+---
+
+## Function Types
+
+![Function Types](slides/function_types.jpg)
+
+---

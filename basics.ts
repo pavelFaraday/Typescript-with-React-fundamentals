@@ -124,3 +124,28 @@ neighborhood = [
 		age: 29,
 	},
 ];
+
+/* -------------------------------------------------------------------------- */
+
+// Function Types, parameters
+
+// example 1
+const myFunc = (a: number, b: number): number => {
+	return a * b;
+};
+
+// example 2 - with union types
+const calculateFunc = (a: number, b: number, c: boolean): number | boolean => {
+	let timesX = a * b;
+	if (timesX > 0) {
+		c = true;
+	} else {
+		c = false;
+	}
+	return c;
+};
+
+// example 3 - "void" means that this functions never returns something, also it means "undefined"
+const someFunc = (value: any): void => {
+	console.log(value);
+};
