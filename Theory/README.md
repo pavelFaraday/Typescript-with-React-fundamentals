@@ -18,6 +18,12 @@ Because JS is dynamically typed, so it does not expects any particular type in d
 -   install Typescript in **standart web (HTML)** application:
     ⓵ `npm install typescript` ===> ⓶`npx tsc filename`
 
+-   install Typescript for **React** project:
+    `npx create-react-app my-app --template typescript`
+
+-   install TypeScript to an **existing React App** project, first install it:
+    `npm install --save typescript @types/node @types/react @types/react-dom @types/jest`
+
 ---
 
 ## Working with Primitives, Array & Object Types
