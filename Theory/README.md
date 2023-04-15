@@ -82,3 +82,13 @@ We say that this version of the identity function is generic, as it works over a
 ![Generics](slides/generics.jpg)
 
 ---
+
+## What is **React.FC** (React.FunctionalComponent) as a type definition?
+
+It makes it clear that component is a function that acts as a functional component. This is how Typescript realizes that it is a React component and not a regular JavaScript function.
+
+`You use angle brackets <> & between those angle brackets you define your own props (if your component gets some custom props)`
+
+![React.FC](slides/react.fc.jpg)
+
+---
