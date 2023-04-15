@@ -96,3 +96,11 @@ It makes it clear that component is a function that acts as a functional compone
 ## React.FormEvent
 
 It is a special type provided by React package, which is for Form Events type declaring in React.
+
+## HTMLInputElement
+
+The gist of it is that typescript has no way of knowing that the element is an HTMLInputElement rather than a generic HTMLElement unless you tell it so.
+
+![ React.FormEvent](slides/reactform.event.jpg)
+
+---
