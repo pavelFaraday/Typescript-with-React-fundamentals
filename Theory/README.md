@@ -92,3 +92,7 @@ It makes it clear that component is a function that acts as a functional compone
 ![React.FC](slides/react.fc.jpg)
 
 ---
+
+## React.FormEvent
+
+It is a special type provided by React package, which is for Form Events type declaring in React.
