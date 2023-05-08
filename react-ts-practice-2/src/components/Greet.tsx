@@ -1,11 +1,17 @@
 type GreetProps = {
 	name: string;
+	dayCount: number;
+	isLoggedIn: boolean;
 };
 
 const Greet = (props: GreetProps) => {
 	return (
 		<>
-			<h2>Welcome, In the world of {props.name}!</h2>
+			<h3>
+				{props.isLoggedIn
+					? `Welcome, In the world of ${props.name}! You can learn it in ${props.dayCount} days.`
+					: `You need To LogIn.`}
+			</h3>
 		</>
 	);
 };
