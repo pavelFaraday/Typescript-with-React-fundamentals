@@ -6,8 +6,11 @@ Typescript is "superset" to JS. It is programming language which builds up on JS
 
 Because JS is dynamically typed, so it does not expects any particular type in data, it does not have by default STATIC typed data. It just takes whatever it gets & then tries to execute this code. **And this dynamic typing causes errors quite often. So, Typescript with static typing could enhance your code & prevent errors.**
 
--   TypeScript adds additional syntax to JavaScript to support a tighter integration with your editor. Catch errors early in your editor.
+
 -   TypeScript understands JavaScript and uses type inference to give you great tooling without additional code.
+-   With static type checking, you get to learn about potential bugs as you're typing the code, than heading to the browser and figuring out at runtime. So, you catch errors early in your editor.
+- Provides a way to describe the shape of an object hence providing better documentation and autocomplete.
+- Makes maintenance and refactoring of large code bases much easier.
 
 ![Typescript Example](slides/typescript_example.png)
 
