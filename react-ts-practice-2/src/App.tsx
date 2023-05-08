@@ -1,7 +1,8 @@
 import "./App.css";
-import Greet from "./components/props_typing/Greet";
-import Person from "./components/props_typing/Person";
-import PersonalList from "./components/props_typing/PersonalList";
+import Greet from "./components/props/Greet";
+import Person from "./components/props/Person";
+import PersonalList from "./components/props/PersonalList";
+import Status from "./components/props/Status";
 
 function App() {
 	const personFullName = {
@@ -29,6 +30,7 @@ function App() {
 			<Greet name="Typescript" dayCount={8} isLoggedIn={true} />
 			<Person fullname={personFullName} />
 			<PersonalList names={nameList} />
+			<Status status="loading" />
 		</div>
 	);
 }
