@@ -33,10 +33,11 @@ function App() {
 			<Person fullname={personFullName} />
 			<PersonalList names={nameList} />
 			<Status status="loading" />
-			<Heading>Children props as String</Heading> 
+			<Heading>Children props as String</Heading>
 			<Oscar>
 				<Heading> Oscar Goes to Leonardo Dicaprio!</Heading>
 			</Oscar>
+			<Greet name="HTML" isLoggedIn={true} />
 		</div>
 	);
 }
