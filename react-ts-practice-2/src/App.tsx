@@ -1,6 +1,7 @@
 import "./App.css";
 import Greet from "./components/props/Greet";
 import Heading from "./components/props/Heading";
+import Oscar from "./components/props/Oscar";
 import Person from "./components/props/Person";
 import PersonalList from "./components/props/PersonalList";
 import Status from "./components/props/Status";
@@ -32,7 +33,10 @@ function App() {
 			<Person fullname={personFullName} />
 			<PersonalList names={nameList} />
 			<Status status="loading" />
-			<Heading>Children props as String</Heading>
+			<Heading>Children props as String</Heading> 
+			<Oscar>
+				<Heading> Oscar Goes to Leonardo Dicaprio!</Heading>
+			</Oscar>
 		</div>
 	);
 }
