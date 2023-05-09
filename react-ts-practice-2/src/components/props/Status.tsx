@@ -2,7 +2,7 @@
 /*                        4. Typing Props - Union Types                       */
 /* -------------------------------------------------------------------------- */
 
-// the UNION type is the set of every **possible string** literal that could be represented by each union member
+// UNION type is the set of every **possible string** literal that could be represented by each union member.
 
 type StatusProps = {
 	status: "loading" | "success" | "error";
