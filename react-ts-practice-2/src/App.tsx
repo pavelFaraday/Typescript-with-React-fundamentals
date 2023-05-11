@@ -1,5 +1,6 @@
 import "./App.css";
 import Button from "./components/props/Button";
+import Button2 from "./components/props/Button2";
 import Greet from "./components/props/Greet";
 import Heading from "./components/props/Heading";
 import Oscar from "./components/props/Oscar";
@@ -42,6 +43,11 @@ function App() {
 			<Button
 				handleClick={() => {
 					console.log("button Clicked");
+				}}
+			/>
+			<Button2
+				handleClick2={(event) => {
+					console.log("button2 Clicked", event);
 				}}
 			/>
 		</div>
