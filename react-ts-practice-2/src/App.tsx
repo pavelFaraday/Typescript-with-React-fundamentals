@@ -1,7 +1,8 @@
 import "./App.css";
-import Button from "./components/props/Button";
-import Button2 from "./components/props/Button2";
-import Button3 from "./components/props/Button3";
+import Button from "./components/props/Events/ClickEvent/Button";
+import Button2 from "./components/props/Events/ClickEvent/Button2";
+import Button3 from "./components/props/Events/ClickEvent/Button3";
+import Input from "./components/props/Events/OnChange/Input";
 import Greet from "./components/props/Greet";
 import Heading from "./components/props/Heading";
 import Oscar from "./components/props/Oscar";
@@ -56,6 +57,7 @@ function App() {
 					console.log("button3 Clicked", event, id);
 				}}
 			/>
+			<Input value="" handleChange={(event) => console.log(event)} />
 		</div>
 	);
 }
