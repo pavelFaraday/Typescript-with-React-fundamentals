@@ -1,6 +1,8 @@
+export type Name = {
+	firstName: string;
+	lastName: string;
+};
+
 export type PersonProps = {
-	fullname: {
-		firstName: string;
-		lastName: string;
-	};
+	fullname: Name;
 };

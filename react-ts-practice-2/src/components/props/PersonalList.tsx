@@ -2,11 +2,10 @@
 /*                  3. Typing Props - typing Array as props                 */
 /* -------------------------------------------------------------------------- */
 
+import { Name } from "./Person.types";
+
 type PersonsListProps = {
-	names: {
-		first: string;
-		last: string;
-	}[];
+	names: Name[];
 };
 
 const PersonalList = (props: PersonsListProps) => {
@@ -15,8 +14,8 @@ const PersonalList = (props: PersonsListProps) => {
 			<h2>
 				{props.names.map((name) => {
 					return (
-						<h2 key={name.first}>
-							{name.first} {name.last}
+						<h2 key={name.firstName}>
+							{name.firstName} {name.lastName}
 						</h2>
 					);
 				})}
