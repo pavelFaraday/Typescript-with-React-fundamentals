@@ -2,12 +2,7 @@
 /*                  2. Typing Props - typing Objects as props                 */
 /* -------------------------------------------------------------------------- */
 
-type PersonProps = {
-	fullname: {
-		firstName: string;
-		lastName: string;
-	};
-};
+import { PersonProps } from "./Person.types";
 
 const Person = (props: PersonProps) => {
 	return (
