@@ -9,6 +9,7 @@ import Oscar from "./components/props//Children/Oscar";
 import Person from "./components/props/Person";
 import PersonalList from "./components/props/PersonalList";
 import Status from "./components/props/Status";
+import Container from "./components/props/Styles/Container";
 
 function App() {
 	const personFullName = {
@@ -58,6 +59,8 @@ function App() {
 				}}
 			/>
 			<Input value="" handleChange={(event) => console.log(event)} />
+
+			<Container styles={{ border: "1px solid red", padding: "1rem" }} />
 		</div>
 	);
 }
