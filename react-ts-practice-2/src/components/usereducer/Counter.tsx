@@ -2,16 +2,20 @@ import { useReducer } from "react";
 
 const initialState = { count: 0 };
 
-// "state" is an object & it has "count" property
 type stateType = {
 	count: number;
 };
 
-// "action" is an object & it has "type" and "payload" properties
-type actionType = {
-	type: string;
+// --- Typing ACTION ---
+type actionUpdateType = {
+	type: `increment` | `decrement`;
 	payload: number;
 };
+type actionResetType = {
+	type: `reset`;
+};
+type actionType = actionUpdateType | actionResetType;
+// --- Typing ACTION ---
 
 function reducer(state: stateType, action: actionType) {
 	switch (action.type) {
@@ -19,6 +23,8 @@ function reducer(state: stateType, action: actionType) {
 			return { count: state.count + action.payload };
 		case "decrement":
 			return { count: state.count - action.payload };
+		case "reset":
+			return initialState;
 		default:
 			return state;
 	}
@@ -39,6 +45,7 @@ const Counter = () => {
 			>
 				Decrement 10
 			</button>
+			<button onClick={() => dispatch({ type: "reset" })}>Reset</button>
 		</>
 	);
 };
