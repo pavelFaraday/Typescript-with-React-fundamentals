@@ -1,9 +1,10 @@
 import "./App.css";
+import Counter from "./components/Class/Counter";
 
 function App() {
 	return (
 		<div className="App">
-			<h1>useRef</h1>
+			<Counter message={" This is counter - "} />
 		</div>
 	);
 }
