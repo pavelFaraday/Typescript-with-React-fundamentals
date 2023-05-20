@@ -1,10 +1,29 @@
 import "./App.css";
-import Counter from "./components/Class/Counter";
+import { List } from "./components/generics/List";
 
 function App() {
 	return (
 		<div className="App">
-			<Counter message={" This is counter - "} />
+			<List
+				items={[
+					{
+						id: 1,
+						first: "Bruce",
+						last: "Wayne",
+					},
+					{
+						id: 2,
+						first: "Clark",
+						last: "Kent",
+					},
+					{
+						id: 3,
+						first: "Princess",
+						last: "Diana",
+					},
+				]}
+				onClick={(item) => console.log(item)}
+			/>
 		</div>
 	);
 }
