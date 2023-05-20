@@ -1,10 +1,11 @@
 import "./App.css";
-import Toast from "./components/templateliterals/Toast"
 
 function App() {
-	return <div className="App">
-		   <Toast position='center' />
-	</div>;
+	return (
+		<div className="App">
+			<h1>Extraction Component Props from another Component</h1>
+		</div>
+	);
 }
 
 export default App;
