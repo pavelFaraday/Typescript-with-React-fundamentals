@@ -1,9 +1,18 @@
 import "./App.css";
+import Text from "./components/Polymorphic/text";
 
 function App() {
 	return (
 		<div className="App">
-			<h1>Extraction Component Props from another Component</h1>
+			<Text as="h1" size="lg">
+				Heading LG
+			</Text>
+			<Text as="p" size="md">
+				Heading MD
+			</Text>
+			<Text as="label" htmlFor="someID" size="sm" color="secondary">
+				Label
+			</Text>
 		</div>
 	);
 }
