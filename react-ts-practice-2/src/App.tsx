@@ -34,15 +34,6 @@ function App() {
 
 	return (
 		<div className="App">
-			<Greet name="Typescript" dayCount={8} isLoggedIn={true} />
-			<Person fullname={personFullName} />
-			<PersonalList names={nameList} />
-			<Status status="loading" />
-			<Heading>Children props as String</Heading>
-			<Oscar>
-				<Heading> Oscar Goes to Leonardo Dicaprio!</Heading>
-			</Oscar>
-			<Greet name="HTML" isLoggedIn={true} />
 			<Button
 				handleClick={() => {
 					console.log("button Clicked");
@@ -59,6 +50,16 @@ function App() {
 				}}
 			/>
 			<Input value="" handleChange={(event) => console.log(event)} />
+			<Greet name="Typescript" dayCount={8} isLoggedIn={true} />
+
+			<Greet name="HTML" isLoggedIn={true} />
+			<Heading>Children props as String</Heading>
+			<Oscar>
+				<Heading> Oscar Goes to Leonardo Dicaprio!</Heading>
+			</Oscar>
+			<Person fullname={personFullName} />
+			<PersonalList names={nameList} />
+			<Status status="loading" />
 
 			<Container styles={{ border: "1px solid red", padding: "1rem" }} />
 		</div>
